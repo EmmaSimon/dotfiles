@@ -1,0 +1,10 @@
+{
+	"extensions":
+	[
+		"html",
+		"htm",
+		"html.erb",
+	],
+	"color_scheme": "Packages/User/SublimeLinter/Focus_Dark (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/ToyMachine (SL).tmTheme",
+}

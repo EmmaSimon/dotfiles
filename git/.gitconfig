@@ -1,0 +1,9 @@
+[core]
+	editor = subl -n -w
+[gui]
+	recentrepo = /home/emma/apps/weather
+[user]
+	name = Emma Simon
+	email = esimon@kmbs.konicaminolta.us
+[url "git@git.sep.net:"]
+	pushInsteadOf = git://git.sep.net/

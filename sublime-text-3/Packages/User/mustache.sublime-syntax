@@ -1,0 +1,62 @@
+%YAML 1.2
+---
+name: mustache
+file_extensions: ["mustache"]
+scope: text.html.mustache
+
+contexts:
+  main:
+    - match: ""
+      push: "Packages/HTML/HTML.sublime-syntax"
+      with_prototype:
+        - include: unescape
+        - include: comment
+        - include: block
+
+  unescape:
+    - match: "{{{"
+      push:
+        - match: "([^}{]+)"
+          scope: variable.parameter.mustache.unescaped
+        - match: "}}}"
+          pop: true
+
+  comment:
+    - match: '{{!'
+      scope: comment.block.mustache
+      push:
+      - match: "([^}{]+)"
+        scope: comment.block.mustache
+      - match: '}}'
+        pop: true
+        scope: comment.block.mustache
+
+  block:
+    - match: "({{)"
+      scope: meta.block.begin.mustache
+      captures:
+        '1': punctuation.definition.tag.begin
+      push:
+      - match: "(}})"
+        captures:
+          '1': punctuation.definition.tag.end
+        pop: true
+        scope: meta.block.end.mustache
+      - include: sections
+      - include: variable
+
+  sections:
+    - match: "(#|\\^|&|>) *([^}{]+) *"
+      captures:
+        1: keyword.control.start.mustache
+        2: entity.name.tag.mustache
+      scope: meta.block.section.start.mustache
+    - match: "(/) *([^}{]+) *"
+      captures:
+        1: keyword.control.end.mustache
+        2: entity.name.tag.mustache
+      scope: meta.block.section.end.mustache
+
+  variable:
+    - match: "\\b[^}{]+\\b"
+      scope: variable.parameter.mustache

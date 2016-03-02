@@ -1,0 +1,9 @@
+[
+	{ "keys": ["ctrl+v"], "command": "paste_and_indent" },
+	{ "keys": ["ctrl+shift+v"], "command": "paste" },
+	{ "keys": ["ctrl+alt+a"], "command": "find_all_under" },
+	{ "keys": ["ctrl+alt+t"], "command": "trim_trailing_white_space" },
+	{ "keys": ["ctrl+q"], "command": "toggle_side_bar" },
+	{ "keys": ["ctrl+alt+x"], "command": "hex_viewer" },
+	{ "keys": ["ctrl+r"], "command": "reverse_characters"},
+]
