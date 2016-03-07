@@ -1,62 +1,87 @@
 %YAML 1.2
 ---
 name: mustache
-file_extensions: ["mustache"]
+file_extensions: ['mustache', 'hjs', 'hgn']
 scope: text.html.mustache
 
 contexts:
   main:
-    - match: ""
-      push: "Packages/HTML/HTML.sublime-syntax"
+    - match: ''
+      push: 'Packages/HTML/HTML.sublime-syntax'
       with_prototype:
         - include: unescape
+        - include: amp-unescape
         - include: comment
         - include: block
 
   unescape:
-    - match: "{{{"
+    - match: '({{{)'
+      captures:
+        '0': meta.block.begin.mustache.unescape
       push:
-        - match: "([^}{]+)"
+        - match: '([^}{]+)'
           scope: variable.parameter.mustache.unescaped
-        - match: "}}}"
+        - match: '(}}})'
+          captures:
+            '0': meta.block.begin.mustache.unescape
+          pop: true
+
+  amp-unescape:
+    - match: '({{\s*&)'
+      captures:
+        '0': meta.block.begin.mustache.unescape
+      push:
+        - match: '([^}{]+)'
+          scope: variable.parameter.mustache.unescaped
+        - match: '(}})'
+          captures:
+            '0': meta.block.begin.mustache.unescape
           pop: true
 
   comment:
-    - match: '{{!'
+    - match: '({{\s*!)'
       scope: comment.block.mustache
       push:
-      - match: "([^}{]+)"
+      - match: '([^}{]+)'
         scope: comment.block.mustache
       - match: '}}'
         pop: true
         scope: comment.block.mustache
 
   block:
-    - match: "({{)"
+    - match: '({{)'
       scope: meta.block.begin.mustache
       captures:
         '1': punctuation.definition.tag.begin
       push:
-      - match: "(}})"
+      - match: '(}})'
         captures:
           '1': punctuation.definition.tag.end
         pop: true
         scope: meta.block.end.mustache
       - include: sections
+      - include: partial
       - include: variable
 
+
   sections:
-    - match: "(#|\\^|&|>) *([^}{]+) *"
+    - match: '\s*(#|\^)\s*([^}{]+)\s*'
       captures:
         1: keyword.control.start.mustache
         2: entity.name.tag.mustache
       scope: meta.block.section.start.mustache
-    - match: "(/) *([^}{]+) *"
+    - match: '\s*(/)\s*([^}{]+)\s*'
       captures:
         1: keyword.control.end.mustache
         2: entity.name.tag.mustache
       scope: meta.block.section.end.mustache
 
   variable:
-    - match: "\\b[^}{]+\\b"
+    - match: '\s*[^}{]+\s*'
       scope: variable.parameter.mustache
+
+  partial:
+    - match: '\s*(>)\s*([^}{]+)\s*'
+      captures:
+        1: keyword.control.start.mustache
+        2: entity.name.section.mustache
