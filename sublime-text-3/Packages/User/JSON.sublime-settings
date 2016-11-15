@@ -1,3 +1,7 @@
 {
 	"color_scheme": "Packages/User/SublimeLinter/Acai (SL).tmTheme",
+	"extensions": [
+		"info",
+		"manifest",
+	],
 }

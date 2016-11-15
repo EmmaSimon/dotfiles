@@ -1,18 +1,92 @@
 {
 	"added_words":
 	[
-		"config"
+		"config",
+		"javascript",
+		"javascript's",
+		"conf",
+		"dict",
+		"pdfs",
+		"dicts",
+		"bmp",
+		"hashchange",
+		"app",
+		"unminified"
 	],
 	"always_show_minimap_viewport": false,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/User/SublimeLinter/keen (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/1337 (SL).tmTheme",
+	"detect_indentation": true,
 	"enable_tab_scrolling": true,
-	"font_face": "Monaco",
+	"extra_file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace"
+	],
+	"extra_folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS"
+	],
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace",
+		"/home/emma/src/bmp/personalize/app/js/index.js",
+		"/home/emma/src/bmp/personalize/app/js/index.js.map"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"/home/emma/src/bmp/personalize/node_modules"
+	],
+	"font_face": "NotoMono",
 	"font_options":
 	[
 		"gray_antialias"
 	],
-	"font_size": 13,
+	"font_size": 12,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -27,5 +101,7 @@
 	"overlay_scroll_bars": "enabled",
 	"spell_check": true,
 	"spelling_selector": "comment",
-	"theme": "Spacegray.sublime-theme"
+	"tab_size": 2,
+	"theme": "Spacegray.sublime-theme",
+	"translate_tabs_to_spaces": true
 }

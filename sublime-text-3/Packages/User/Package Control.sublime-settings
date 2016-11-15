@@ -1,0 +1,53 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"1337 Color Scheme",
+		"Colorsublime",
+		"Emmet",
+		"fish-shell",
+		"Git",
+		"GitGutter",
+		"Gitignored File Excluder",
+		"Golang Build",
+		"Google Spell Check",
+		"GoOracle",
+		"GoSublime",
+		"HexViewer",
+		"Jedi - Python autocompletion",
+		"Line Endings Unify",
+		"Markdown Preview",
+		"Material Theme",
+		"MultiEditUtils",
+		"Package Control",
+		"PackageDev",
+		"Pretty JSON",
+		"rsub",
+		"ScopeHunter",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-contrib-golint",
+		"SublimeLinter-contrib-govet",
+		"SublimeLinter-csslint",
+		"SublimeLinter-flake8",
+		"SublimeLinter-html-tidy",
+		"SublimeLinter-jscs",
+		"SublimeLinter-jshint",
+		"SublimeLinter-json",
+		"SublimeREPL",
+		"Text Pastry",
+		"Theme - Orchis",
+		"Theme - Spacegray",
+		"Themr",
+		"TrailingSpaces"
+	],
+	"repositories":
+	[
+		"https://github.com/titoBouzout/LineEndings",
+		"https://github.com/titoBouzout/LineEndings"
+	]
+}

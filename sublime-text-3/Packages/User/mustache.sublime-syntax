@@ -2,7 +2,7 @@
 ---
 name: mustache
 file_extensions: ['mustache', 'hjs', 'hgn']
-scope: text.html.mustache
+scope: text.mustache
 
 contexts:
   main:

@@ -5,6 +5,7 @@
 		"template",
 		"tmpl",
 	],
+  "auto_complete_selector": "source, text",
 	"word_separators": "./\\()\"':,.;<>~!@#$%^&*|+=]{}`~?",
 	"color_scheme": "Packages/User/SublimeLinter/Focus_Dark (SL).tmTheme",
 	"color_scheme": "Packages/User/ToyMachine (mustache).tmTheme",

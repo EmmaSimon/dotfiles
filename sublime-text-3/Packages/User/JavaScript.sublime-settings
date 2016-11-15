@@ -1,3 +1,7 @@
 {
-	"color_scheme": "Packages/User/SublimeLinter/Potpourri (SL).tmTheme",
+  "tab_size": 4,
+  "rulers": [80],
+  "word_wrap": "false",
+  "translate_tabs_to_spaces": true,
+	"color_scheme": "Packages/User/SublimeLinter/feel_good (SL).tmTheme",
 }
