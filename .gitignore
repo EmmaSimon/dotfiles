@@ -1,5 +1,6 @@
 *
 !*/
+Google/*
 GitKraken*
 VirtualBox*
 autostart*
@@ -12,7 +13,10 @@ evince*
 evolution*
 fish/*
 !fish/config.fish
-!fish/functions*
+fish/functions/*
+!fish/functions/fish_prompt.fish
+!fish/functions/fish_right_prompt.fish
+fisherman/*
 freerdp*
 gedit*
 git/*
@@ -28,6 +32,7 @@ nautilus*
 nitrogen*
 pitivi*
 pulse*
+ranger/*
 spotify*
 sublime-text-3/*
 !sublime-text-3/Packages/*
