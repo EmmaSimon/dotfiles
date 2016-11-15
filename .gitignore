@@ -1,0 +1,48 @@
+*
+!*/
+GitKraken*
+VirtualBox*
+autostart*
+browser-launcher2
+configstore*
+dconf*
+enchant*
+eog*
+evince*
+evolution*
+fish/*
+!fish/config.fish
+!fish/functions*
+freerdp*
+gedit*
+git/*
+!git/.gitconfig
+!.gitignore
+gnome-control-center*
+google-chrome/*
+gtk*
+inkscape*
+libreoffice*
+menus*
+nautilus*
+nitrogen*
+pitivi*
+pulse*
+spotify*
+sublime-text-3/*
+!sublime-text-3/Packages/*
+sublime-text-3/Packages/*
+!sublime-text-3/Packages/User*
+sublime-text-3/Packages/User/Package Control.cache/*
+sublime-text-3/Packages/User/GoSublime/*
+sublime-text-3/Packages/User/Package Control.ca-certs/*
+sublime-text-3/Packages/User/Package Control.last-run
+sublime-text-3/Packages/User/Package Control.ca-list
+sublime-text-3/Packages/User/Package Control.ca-bundle
+sublime-text-3/Packages/User/Package Control.system-ca-bundle
+sublime-text-3/Packages/User/Package Control.user-ca-bundle
+sublime-text-3/Packages/User/Package Control.merged-ca-bundle
+sublime-text-3/Packages/User/SublimeLinter/*
+!sublime-text-3/Packages/User/SublimeLinter/ToyMachine*
+vlc*
+
