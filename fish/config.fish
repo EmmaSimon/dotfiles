@@ -88,7 +88,7 @@ alias pybugs=bug
 alias python=python3
 alias appbuild='python /home/emma/src/bmp/pack/app.py bundle'
 alias manifest='python /home/emma/src/bmp/pack/manifest_generator.py'
-alias bmppack='python2 /home/emma/src/bmp/tada/app.py'
+alias bmppack='python /home/emma/src/bmp/pack/app.py'
 
 set -x PAGER 'most'
 set -x VISUAL 'subl -nw'
