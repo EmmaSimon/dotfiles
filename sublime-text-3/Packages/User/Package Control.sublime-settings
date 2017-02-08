@@ -11,7 +11,6 @@
 		"fish-shell",
 		"Git",
 		"GitGutter",
-		"Gitignored File Excluder",
 		"Golang Build",
 		"Google Spell Check",
 		"GoOracle",
@@ -27,6 +26,7 @@
 		"Pretty JSON",
 		"rsub",
 		"ScopeHunter",
+		"SCSS",
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
@@ -47,7 +47,5 @@
 	],
 	"repositories":
 	[
-		"https://github.com/titoBouzout/LineEndings",
-		"https://github.com/titoBouzout/LineEndings"
 	]
 }
