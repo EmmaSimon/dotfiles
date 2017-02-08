@@ -9,6 +9,7 @@ configstore*
 dconf*
 enchant*
 eog*
+!eslint/*
 evince*
 evolution*
 fish/*
