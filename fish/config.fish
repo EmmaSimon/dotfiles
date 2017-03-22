@@ -90,6 +90,9 @@ alias appbuild='python /home/emma/src/bmp/pack/app.py bundle'
 alias manifest='python /home/emma/src/bmp/pack/manifest_generator.py'
 alias bmppack='python /home/emma/src/bmp/pack/app.py'
 
+setxkbmap -option ctrl:nocaps
+tput smkx
+
 set -x PAGER 'most'
 set -x VISUAL 'subl -nw'
 set -x EDITOR $VISUAL
