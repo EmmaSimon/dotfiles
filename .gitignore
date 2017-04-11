@@ -14,9 +14,8 @@ evince*
 evolution*
 fish/*
 !fish/config.fish
-fish/functions/*
-!fish/functions/fish_prompt.fish
-!fish/functions/fish_right_prompt.fish
+!fish/functions/*
+fish/functions/fisher.fish
 fisherman/*
 freerdp*
 gedit*
