@@ -69,7 +69,8 @@
 		"*.class",
 		"*.psd",
 		"*.db",
-		"*.sublime-workspace"
+		"*.sublime-workspace",
+		"/home/emma/src/bmp/webdav/.gitignore"
 	],
 	"folder_exclude_patterns":
 	[

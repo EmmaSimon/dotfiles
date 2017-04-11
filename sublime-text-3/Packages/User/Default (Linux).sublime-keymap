@@ -11,4 +11,7 @@
   { "keys": ["shift+alt+down"], "command": "select_lines", "args": {"forward": true} },
   { "keys": ["shift+alt+s"], "command": "split_line", "args": {"split_pattern": " "}},
   { "keys": ["shift+alt+up"], "command": "select_lines", "args": {"forward": false} },
+  { "keys": ["ctrl+tab"], "command": "next_view" },
+  { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+  { "keys": ["ctrl+f4"], "command": "close_file" },
 ]
