@@ -6,6 +6,10 @@ VirtualBox*
 autostart*
 browser-launcher2
 configstore*
+Code/*
+!Code/User/*
+!Code/User/snippets/*
+Code/User/workspaceStorage
 dconf*
 enchant*
 eog*
@@ -50,4 +54,3 @@ sublime-text-3/Packages/User/Package Control.merged-ca-bundle
 sublime-text-3/Packages/User/SublimeLinter/*
 !sublime-text-3/Packages/User/SublimeLinter/ToyMachine*
 vlc*
-

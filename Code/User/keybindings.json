@@ -1,0 +1,65 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "ctrl+q",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "-editor.action.moveLinesDownAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "-editor.action.moveLinesUpAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+left",
+        "command": "subwordNavigation.cursorSubwordLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+right",
+        "command": "subwordNavigation.cursorSubwordRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+left",
+        "command": "subwordNavigation.cursorSubwordLeftSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+right",
+        "command": "subwordNavigation.cursorSubwordRightSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+backspace",
+        "command": "subwordNavigation.deleteSubwordLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+delete",
+        "command": "subwordNavigation.deleteSubwordRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "f8",
+        "command": "sortJSON.sortJSON"
+    }
+]

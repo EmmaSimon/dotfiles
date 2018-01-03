@@ -1,0 +1,35 @@
+{
+    "bracketPairColorizer.forceIterationColorCycle": true,
+    "bracketPairColorizer.forceUniqueOpeningColor": true,
+    "debug.inlineValues": true,
+    "editor.cursorBlinking": "phase",
+    "editor.dragAndDrop": false,
+    "editor.fontFamily": "'Fira Code'",
+    "editor.fontLigatures": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [
+        80
+    ],
+    "editor.snippetSuggestions": "top",
+    "files.insertFinalNewline": true,
+    "git.enableCommitSigning": true,
+    "javascript.implicitProjectConfig.experimentalDecorators": true,
+    "sublimeTextKeymap.promptV3Features": true,
+    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+    "workbench.colorCustomizations": {
+        "editorWhitespace.foreground": "#ffffff21",
+        "statusBar.background": "#252526",
+        "statusBar.debuggingBackground": "#511f1f",
+        "statusBar.noFolderBackground": "#252526"
+    },
+    "workbench.colorTheme": "Oceanic Next",
+    "workbench.iconTheme": "material-icon-theme",
+    "php.validate.executablePath": "/usr/bin/php",
+    "php.validate.run": "onType",
+    "eslint.autoFixOnSave": true,
+    "workbench.startupEditor": "newUntitledFile",
+}
