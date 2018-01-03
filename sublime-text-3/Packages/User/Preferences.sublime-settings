@@ -11,13 +11,16 @@
 		"bmp",
 		"hashchange",
 		"app",
-		"unminified"
+		"unminified",
+		"admin",
+		"admins"
 	],
 	"always_show_minimap_viewport": false,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/User/SublimeLinter/1337 (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Oceanic Next (SL).tmTheme",
 	"detect_indentation": true,
 	"enable_tab_scrolling": true,
+	"ensure_newline_at_eof_on_save": true,
 	"extra_file_exclude_patterns":
 	[
 		"*.pyc",
@@ -39,14 +42,23 @@
 		"*.class",
 		"*.psd",
 		"*.db",
-		"*.sublime-workspace"
+		"market/www/*.js",
+		"*.sublime-workspace",
+		"/home/emma/src/bmp/personalize/app/js/index.js",
+		"/home/emma/src/bmp/personalize/app/js/index.js.map"
 	],
 	"extra_folder_exclude_patterns":
 	[
 		".svn",
 		".git",
 		".hg",
-		"CVS"
+		"CVS",
+		"node_modules",
+		"market/db",
+		"market/priv",
+		"market/vendor",
+		"gmarket/dist",
+		"/home/emma/src/bmp/personalize/node_modules"
 	],
 	"file_exclude_patterns":
 	[
@@ -69,26 +81,59 @@
 		"*.class",
 		"*.psd",
 		"*.db",
+		"market/www/*.js",
 		"*.sublime-workspace",
-		"/home/emma/src/bmp/webdav/.gitignore"
+		"/home/emma/src/bmp/personalize/app/js/index.js",
+		"/home/emma/src/bmp/personalize/app/js/index.js.map",
+		"/home/emma/src/market/config/register-error-handler.php",
+		"/home/emma/src/market/test/market.bak",
+		"/home/emma/src/market/www/index.html",
+		"/home/emma/src/market/www/loading.html",
+		"/home/emma/src/market/www/71bf6d0e80c18b60f76d3c627741731d.png",
+		"/home/emma/src/market/www/loading.263b76b64740a19e27b5.bundle.js",
+		"/home/emma/src/market/config/settings.php",
+		"/home/emma/src/market/www/index.dcd1637e1e8b47193e21.bundle.js",
+		"/home/emma/src/market/www/f545f16ed91d7adbc550371deba0dc95.png",
+		"/home/emma/src/market/www/loading.34ad7a4bf640e842b78f.bundle.js",
+		"/home/emma/src/market/www/3d57564d30050863ea30c43fce74bf43.png",
+		"/home/emma/src/market/www/index.96f0b862b007651d9202.bundle.js",
+		"/home/emma/src/market/www/zxcvbn.8dcac546a176ef3504b2.bundle.js",
+		"/home/emma/src/market/www/zxcvbn.d8320e4dec2793e62340.bundle.js",
+		"/home/emma/src/market/www/b0604a3c5f097239cdd7d8b0c054e719.png",
+		"/home/emma/src/market/www/6cf84d5a98e35ed288c5a0a2496d9d6d.png",
+		"/home/emma/src/market/www/index.844be1f1481086337fdc.bundle.js",
+		"/home/emma/src/market/www/a03abb1884c1058060df05af2aca8674.jpg"
 	],
 	"folder_exclude_patterns":
 	[
 		".svn",
 		".git",
 		".hg",
-		"CVS"
+		"CVS",
+		"node_modules",
+		"market/db",
+		"market/priv",
+		"market/vendor",
+		"gmarket/dist",
+		"/home/emma/src/bmp/personalize/node_modules",
+		"/home/emma/src/market/www/icons-a05fbef4d78ed5d66ee619bcc0d1e892",
+		"/home/emma/src/market/.vscode",
+		"/home/emma/src/market/gmarket/dist",
+		"/home/emma/src/market/vendor",
+		"/home/emma/src/market/www/js/dist",
+		"/home/emma/src/market/www/css/dist",
+		"/home/emma/src/market/gmarket/node_modules",
+		"/home/emma/src/market/node_modules"
 	],
-	"font_face": "NotoMono",
+	"font_face": "Fira Code",
 	"font_options":
 	[
 		"gray_antialias"
 	],
-	"font_size": 12,
-	"hot_exit": false,
-	"ignore_vcs_packages": true,
+	"font_size": 13,
 	"ignored_packages":
 	[
+		"SublimeLinter-html-tidy",
 		"Vintage"
 	],
 	"indent_guide_options":
@@ -99,10 +144,11 @@
 	"line_padding_bottom": 3,
 	"line_padding_top": 3,
 	"overlay_scroll_bars": "enabled",
-	"remember_open_files": false,
+	"show_tab_close_buttons": false,
 	"spell_check": true,
 	"spelling_selector": "comment",
 	"tab_size": 4,
-	"theme": "Spacegray.sublime-theme",
-	"translate_tabs_to_spaces": true
+	"theme": "DA.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
 }

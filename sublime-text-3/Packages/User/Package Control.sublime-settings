@@ -6,11 +6,18 @@
 	"installed_packages":
 	[
 		"1337 Color Scheme",
+		"A File Icon",
+		"Babel",
+		"Babel Snippets",
+		"Color Highlighter",
 		"Colorsublime",
+		"DA UI",
 		"Emmet",
-		"fish-shell",
+		"ESLint-Formatter",
+		"fish",
 		"Git",
 		"GitGutter",
+		"Gitignored File Excluder",
 		"Golang Build",
 		"Google Spell Check",
 		"GoOracle",
@@ -21,15 +28,15 @@
 		"Markdown Preview",
 		"Material Theme",
 		"MultiEditUtils",
+		"Oceanic Next Color Scheme",
 		"Package Control",
 		"PackageDev",
-		"PlainNotes",
-		"PlainTasks",
 		"Pretty JSON",
 		"rsub",
+		"Sass",
 		"ScopeHunter",
-		"SCSS",
 		"SideBarEnhancements",
+		"SortBy",
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-contrib-golint",
@@ -45,10 +52,12 @@
 		"Theme - Orchis",
 		"Theme - Spacegray",
 		"Themr",
-		"TodoReview",
-		"TrailingSpaces"
+		"TrailingSpaces",
+		"TypeScript Syntax"
 	],
 	"repositories":
 	[
+		"https://github.com/titoBouzout/LineEndings",
+		"https://github.com/titoBouzout/LineEndings"
 	]
 }
