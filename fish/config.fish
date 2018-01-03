@@ -1,37 +1,38 @@
 function fish_greeting
-    fortune-goat
+    fortune ~/.tmg
     echo
 end
 
-set TF_ALIAS fuck
-function fuck -d 'Correct your previous console command'
-    set -l exit_code $status
-    set -l eval_script (mktemp 2>/dev/null ; or mktemp -t 'thefuck')
-    set -l fucked_up_command $history[1]
-    thefuck $fucked_up_command > $eval_script
-    . $eval_script
-    /bin/rm $eval_script
-    if test $exit_code -ne 0
-        history --delete $fucked_up_command
-    end
+tput smkx
+function st_smkx --on-event fish_postexec
+    tput smkx
+end
+function st_rmkx --on-event fish_preexec
+    tput rmkx
 end
 
-alias pybugs=/home/emma/src/pybugs/pybugs
-alias bug=/home/emma/src/pybugs/pybugs
+setxkbmap -option ctrl:nocaps
+
+alias pybugs=/home/emma/src/programs/pybugs/pybugs
+alias bug=/home/emma/src/programs/pybugs/pybugs
 alias python=python3
 alias appbuild='python /home/emma/src/bmp/pack/app.py bundle'
 alias manifest='python /home/emma/src/bmp/pack/manifest_generator.py'
-alias bmppack='python /home/emma/src/bmp/pack/app.py'
-
-setxkbmap -option ctrl:nocaps
-tput smkx
+alias bmppack='python2 /home/emma/src/bmp/tada/app.py'
+alias ls='exa --group-directories-first'
+alias ll='exa -l --group-directories-first --git'
+alias lt='exa -lT --group-directories-first --git'
+alias lr='exa -lRT --group-directories-first --git'
+alias sps='sudo pacman -S'
+alias pas='pacaur -S'
+alias mx='tmuxinator dev'
 
 set -x PAGER 'most'
 set -x VISUAL 'subl -nw'
 set -x EDITOR $VISUAL
-set -x PATH $PATH /usr/local/go/bin $HOME/src/go/bin $HOME/bin $HOME/src/npm-global/bin
-set -x GOPATH $HOME/src/go
-set -x GOBIN $HOME/src/go/bin
+set -x PATH $PATH /usr/local/go/bin $HOME/src/misc/go/bin $HOME/bin $HOME/src/misc/npm-global/bin
+set -x GOPATH $HOME/src/misc/go
+set -x GOBIN $HOME/src/misc/go/bin
 if not set -q mfp_ip
     set -xg mfp_ip 'c554.sep.net'
 end
