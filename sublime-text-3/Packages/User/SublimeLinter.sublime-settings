@@ -1,154 +1,132 @@
 {
-    "user": {
-        "debug": true,
-        "delay": 0.25,
-        "error_color": "D02000",
-        "gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
-        "gutter_theme_excludes": [],
-        "lint_mode": "background",
-        "linters": {
-            "csslint": {
-                "@disable": true,
-                "args": [],
-                "errors": "",
-                "excludes": [],
-                "ignore": "ids,order-alphabetical,adjoining-classes,float,box-model,box-sizing,gradients,compatible-vendor-prefixes,fallback-colors",
-                "warnings": ""
-            },
-            "eslint": {
-                "@disable": false,
-                "args": [],
-                "excludes": []
-            },
-            "flake8": {
-                "@disable": false,
-                "args": [],
-                "builtins": "",
-                "excludes": [],
-                "executable": "",
-                "ignore": "",
-                "jobs": "1",
-                "max-complexity": 10,
-                "max-line-length": null,
-                "select": "",
-                "show-code": false
-            },
-            "golint": {
-                "@disable": false,
-                "args": [],
-                "excludes": []
-            },
-            "gotype": {
-                "@disable": false,
-                "args": [],
-                "excludes": []
-            },
-            "govet": {
-                "@disable": false,
-                "args": [],
-                "excludes": []
-            },
-            "htmltidy": {
-                "@disable": false,
-                "args": [],
-                "excludes": [],
-                "ignore_match": {
-                    "mustache": [
-                        ".* proprietary attribute .*",
-                        "trimming empty .*",
-                        "discarding unexpected plain text",
-                        ".* attribute .* has invalid value \"{{.*}}\"",
-                        ".* attribute \"{{.*}}\" lacks value"
-                    ]
-                }
-            },
-            "jscs": {
-                "@disable": true,
-                "args": [
-                    "--preset=google"
-                ],
-                "excludes": []
-            },
-            "jshint": {
-                "@disable": true,
-                "args": [
-                    "--config",
-                    "/home/emma/.config/jshint/.jshintrc"
-                ],
-                "excludes": []
-            },
-            "json": {
-                "@disable": false,
-                "args": [],
-                "excludes": [],
-                "strict": true
-            },
-            "pep8": {
-                "@disable": true,
-                "args": [],
-                "excludes": [],
-                "ignore": "",
-                "max-line-length": null,
-                "select": ""
+    "debug": true,
+    "delay": 0.25,
+    "gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
+    "lint_mode": "background",
+    "linters": {
+        "csslint": {
+            "disable": true,
+            "args": [],
+            "excludes": [],
+            "ignore": "ids,order-alphabetical,adjoining-classes,float,box-model,box-sizing,gradients,compatible-vendor-prefixes,fallback-colors",
+        },
+        "eslint": {
+            "disable": false,
+            "args": [],
+            "excludes": []
+        },
+        "flake8": {
+            "disable": false,
+            "args": [],
+            "excludes": [],
+            "jobs": "1",
+            "max-complexity": 10,
+            "max-line-length": null,
+            "show-code": false
+        },
+        "golint": {
+            "disable": false,
+            "args": [],
+            "excludes": []
+        },
+        "gotype": {
+            "disable": false,
+            "args": [],
+            "excludes": []
+        },
+        "govet": {
+            "disable": false,
+            "args": [],
+            "excludes": []
+        },
+        "htmltidy": {
+            "disable": false,
+            "args": [],
+            "excludes": [],
+            "ignore_match": {
+                "mustache": [
+                    ".* proprietary attribute .*",
+                    "trimming empty .*",
+                    "discarding unexpected plain text",
+                    ".* attribute .* has invalid value \"{{.*}}\"",
+                    ".* attribute \"{{.*}}\" lacks value"
+                ]
             }
         },
-        "mark_style": "outline",
-        "no_column_highlights_line": false,
-        "passive_warnings": false,
-        "paths": {
-            "linux": [],
-            "osx": [],
-            "windows": []
+        "jscs": {
+            "disable": true,
+            "args": [
+                "--preset=google"
+            ],
+            "excludes": []
         },
-        "python_paths": {
-            "linux": [],
-            "osx": [],
-            "windows": []
+        "jshint": {
+            "disable": true,
+            "args": [],
+            "excludes": []
         },
-        "rc_search_limit": 3,
-        "shell_timeout": 10,
-        "show_errors_on_save": false,
-        "show_marks_in_minimap": true,
-        "syntax_map": {
-            "coffeescript (gulpfile)": "coffeescript",
-            "html (django)": "html",
-            "html (rails)": "html",
-            "html 5": "html",
-            "htmlmustache": "html",
-            "javascript (babel)": "javascript",
-            "javascript (eslint)": "javascript",
-            "javascript (gruntfile)": "javascript",
-            "javascript (gulpfile)": "javascript",
-            "javascript (postcss)": "javascript",
-            "javascript (stylelint)": "javascript",
-            "javascript (webpack)": "javascript",
-            "json (babel)": "json",
-            "json (bower)": "json",
-            "json (composer)": "json",
-            "json (eslint)": "json",
-            "json (npm)": "json",
-            "json (postcss)": "json",
-            "json (settings)": "json",
-            "json (stylelint)": "json",
-            "json (sublime)": "json",
-            "json (tern js)": "json",
-            "php": "html",
-            "python django": "python",
-            "xml (config)": "xml",
-            "xml (svg)": "xml",
-            "yaml (circleci)": "yaml",
-            "yaml (docker)": "yaml",
-            "yaml (eslint)": "yaml",
-            "yaml (lock)": "yaml",
-            "yaml (procfile)": "yaml",
-            "yaml (stylelint)": "yaml",
-            "yaml (yarn)": "yaml"
+        "json": {
+            "disable": false,
+            "args": [],
+            "excludes": [],
+            "strict": true
         },
-        "tooltip_fontsize": "1rem",
-        "tooltip_theme": "Packages/SublimeLinter/tooltip-themes/Default/Default.tooltip-theme",
-        "tooltip_theme_excludes": [],
-        "tooltips": true,
-        "warning_color": "DDB700",
-        "wrap_find": true
+        "pep8": {
+            "disable": true,
+            "args": [],
+            "excludes": [],
+            "max-line-length": null,
+        },
+        "php": {
+            "disable": false,
+            "args": []
+        }
+    },
+    "no_column_highlights_line": false,
+    "paths": {
+        "linux": [
+            "/home/emma/src/misc/npm-global/bin",
+            "/usr/bin"
+        ],
+        "osx": [],
+        "windows": []
+    },
+    "show_marks_in_minimap": true,
+    "syntax_map": {
+        "coffeescript (gulpfile)": "coffeescript",
+        "html (django)": "html",
+        "html (rails)": "html",
+        "html 5": "html",
+        "htmlmustache": "html",
+        "javascript (babel)": "javascript",
+        "javascript (eslint)": "javascript",
+        "javascript (gruntfile)": "javascript",
+        "javascript (gulpfile)": "javascript",
+        "javascript (postcss)": "javascript",
+        "javascript (puglint)": "javascript",
+        "javascript (stylelint)": "javascript",
+        "javascript (webpack)": "javascript",
+        "json (babel)": "json",
+        "json (bower)": "json",
+        "json (composer)": "json",
+        "json (eslint)": "json",
+        "json (npm)": "json",
+        "json (postcss)": "json",
+        "json (puglint)": "json",
+        "json (settings)": "json",
+        "json (stylelint)": "json",
+        "json (sublime)": "json",
+        "json (tern js)": "json",
+        "php": "html",
+        "python django": "python",
+        "xml (config)": "xml",
+        "xml (svg)": "xml",
+        "yaml (circleci)": "yaml",
+        "yaml (docker)": "yaml",
+        "yaml (eslint)": "yaml",
+        "yaml (lock)": "yaml",
+        "yaml (procfile)": "yaml",
+        "yaml (stylelint)": "yaml",
+        "yaml (yarn)": "yaml"
     }
 }

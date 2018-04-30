@@ -17,7 +17,7 @@
 	],
 	"always_show_minimap_viewport": false,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/User/SublimeLinter/Oceanic Next (SL).tmTheme",
+	"color_scheme": "Packages/Oceanic Next Color Scheme/Oceanic Next.tmTheme",
 	"detect_indentation": true,
 	"enable_tab_scrolling": true,
 	"ensure_newline_at_eof_on_save": true,
@@ -42,7 +42,7 @@
 		"*.class",
 		"*.psd",
 		"*.db",
-		"market/www/*.js",
+		"market/www/*.bundle.js",
 		"*.sublime-workspace",
 		"/home/emma/src/bmp/personalize/app/js/index.js",
 		"/home/emma/src/bmp/personalize/app/js/index.js.map"
@@ -54,8 +54,6 @@
 		".hg",
 		"CVS",
 		"node_modules",
-		"market/db",
-		"market/priv",
 		"market/vendor",
 		"gmarket/dist",
 		"/home/emma/src/bmp/personalize/node_modules"
@@ -81,7 +79,7 @@
 		"*.class",
 		"*.psd",
 		"*.db",
-		"market/www/*.js",
+		"market/www/*.bundle.js",
 		"*.sublime-workspace",
 		"/home/emma/src/bmp/personalize/app/js/index.js",
 		"/home/emma/src/bmp/personalize/app/js/index.js.map",
@@ -91,7 +89,6 @@
 		"/home/emma/src/market/www/loading.html",
 		"/home/emma/src/market/www/71bf6d0e80c18b60f76d3c627741731d.png",
 		"/home/emma/src/market/www/loading.263b76b64740a19e27b5.bundle.js",
-		"/home/emma/src/market/config/settings.php",
 		"/home/emma/src/market/www/index.dcd1637e1e8b47193e21.bundle.js",
 		"/home/emma/src/market/www/f545f16ed91d7adbc550371deba0dc95.png",
 		"/home/emma/src/market/www/loading.34ad7a4bf640e842b78f.bundle.js",
@@ -111,8 +108,6 @@
 		".hg",
 		"CVS",
 		"node_modules",
-		"market/db",
-		"market/priv",
 		"market/vendor",
 		"gmarket/dist",
 		"/home/emma/src/bmp/personalize/node_modules",
@@ -133,6 +128,7 @@
 	"font_size": 13,
 	"ignored_packages":
 	[
+		"Markdown",
 		"SublimeLinter-html-tidy",
 		"Vintage"
 	],

@@ -1,5 +1,23 @@
 {
 	"bootstrapped": true,
+	"downloader_precedence":
+	{
+		"linux":
+		[
+			"wget",
+			"curl",
+			"urllib"
+		],
+		"osx":
+		[
+			"curl",
+			"urllib"
+		],
+		"windows":
+		[
+			"wininet"
+		]
+	},
 	"in_process_packages":
 	[
 	],
@@ -26,8 +44,10 @@
 		"Jedi - Python autocompletion",
 		"Line Endings Unify",
 		"Markdown Preview",
+		"MarkdownEditing",
 		"Material Theme",
 		"MultiEditUtils",
+		"Naomi",
 		"Oceanic Next Color Scheme",
 		"Package Control",
 		"PackageDev",
@@ -37,17 +57,20 @@
 		"ScopeHunter",
 		"SideBarEnhancements",
 		"SortBy",
+		"sublime-github",
 		"SublimeLinter",
-		"SublimeLinter-contrib-eslint",
-		"SublimeLinter-contrib-golint",
-		"SublimeLinter-contrib-govet",
 		"SublimeLinter-csslint",
+		"SublimeLinter-eslint",
 		"SublimeLinter-flake8",
+		"SublimeLinter-golint",
+		"SublimeLinter-govet",
 		"SublimeLinter-html-tidy",
 		"SublimeLinter-jscs",
 		"SublimeLinter-jshint",
 		"SublimeLinter-json",
+		"SublimeLinter-php",
 		"SublimeREPL",
+		"TerminalView",
 		"Text Pastry",
 		"Theme - Orchis",
 		"Theme - Spacegray",
@@ -57,7 +80,6 @@
 	],
 	"repositories":
 	[
-		"https://github.com/titoBouzout/LineEndings",
-		"https://github.com/titoBouzout/LineEndings"
+		"https://github.com/SublimeLinter/SublimeLinter-php"
 	]
 }
