@@ -14,7 +14,7 @@ set __fish_git_prompt_char_stashstate '⇲'
 set __fish_git_prompt_char_invalidstate '✕'
 set __fish_git_prompt_char_upstream_ahead '+'
 set __fish_git_prompt_char_upstream_behind '-'
-set __fish_git_prompt_char_cleanstate ''
+set __fish_git_prompt_char_cleanstate '♪'
 
 # Status colors
 set __fish_git_prompt_color blue
